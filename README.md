@@ -14,24 +14,20 @@
 ## Databases:
 ![SQL](https://img.shields.io/badge/SQL-CC2927?style=for-the-badge&logo=microsoft-sql-server&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Neeraj281998&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://github-readme-streak-stats.herokuapp.com/?user=Neeraj281998&theme=tokyonight&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Neeraj281998&theme=tokyonight&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
 
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=Neeraj281998&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
 
 ## 💼 Professional Experience
 - **Software Engineer** at AlignBits LLC *(April 2023 - August 2024)*
-  - Enhanced system reliability using AWS (EC2, SES, SNS, SQS, CloudWatch)
-  - Integrated Meta and Instagram advertising APIs
-  - Optimized MySQL database schemas improving efficiency by 20%
-  - Refactored backend code reducing maintenance time by 25%
+  - Enhanced System Reliability: Developed and maintained backend services using AWS (EC2, SES, SNS, SQS, CloudWatch),improving system reliability by 10% and enhancing scalability.
+  - Improved Data Processing: Integrated the Meta and Instagram advertising APIs, streamlining data processing and analytics, resulting in a 25% increase in data throughput.
+  - Collaborated with Front-End Teams: Partnered closely with front-end developers to ensure seamless integration and a smooth user experience, leading to a reduction in user-reported issues.
+  - Optimized Database Performance: Designed and optimized MySQL database schemas, reducing query execution time and enhancing data retrieval efficiency by 20%.
+  - Refactored Backend Code: Conducted a comprehensive code review and refactored backend code, resulting in a 20% improvement in performance and a 25% reduction in maintenance time.
 
 - **Software Engineer Intern** at AlignBits LLC *(February 2023 - March 2023)*
-  - Developed and optimized Spring Boot RESTful APIs
-  - Reduced API response time by 20%
+  - Streamlined API Development: Developed and optimized Spring Boot RESTful APIs, reducing API response time by 20%.
 
 ## 🎓 Education
 - **MSc Computing (Artificial Intelligence)** - Dublin City University, Ireland *(September 2024 - Present)*
