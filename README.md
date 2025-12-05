@@ -24,17 +24,22 @@ I like working in teams where code quality, clear communication, and ownership m
 
 ## 💼 Professional Experience
 - **Software Engineer** at AlignBits LLC *(April 2023 - August 2024)*
-  - Enhanced System Reliability: Developed and maintained backend services using AWS (EC2, SES, SNS, SQS, CloudWatch),improving system reliability by 10% and enhancing scalability.
-  - Improved Data Processing: Integrated the Meta and Instagram advertising APIs, streamlining data processing and analytics, resulting in a 25% increase in data throughput.
-  - Collaborated with Front-End Teams: Partnered closely with front-end developers to ensure seamless integration and a smooth user experience, leading to a reduction in user-reported issues.
-  - Optimized Database Performance: Designed and optimized MySQL database schemas, reducing query execution time and enhancing data retrieval efficiency by 20%.
-  - Refactored Backend Code: Conducted a comprehensive code review and refactored backend code, resulting in a 20% improvement in performance and a 25% reduction in maintenance time.
+• Engineered and deployed 10+ scalable microservices using Spring Boot and Java, enhancing application modularity, scalability, and ease of maintenance.
+• Constructed and preserved backend services leveraging AWS (EC2, SES, SNS, SQS, CloudWatch), boosting system reliability by 10% and overall scalability.
+• Integrated Meta and Instagram advertising APIs to streamline data processing and analytics, resulting in a 25% surge in data throughput.
+• Collaborated cross-functionally with Front-End Teams to ensure seamless integration and smooth user experience, reducing user-reported issues.
+• Optimized database performance by crafting and refining MySQL schemas, cutting query execution time and boosting data retrieval efficiency by 20%.
+• Led backend code restructuring initiatives, yielding a 20% uplift in performance and a 25% diminishment in maintenance time after thorough code reviews.
 
 - **Software Engineer Intern** at AlignBits LLC *(February 2023 - March 2023)*
-  - Streamlined API Development: Developed and optimized Spring Boot RESTful APIs, reducing API response time by 20%.
+• Formulated and streamlined Spring Boot RESTful APIs, significantly reducing API response time by 20%.
+• Developed comprehensive unit tests for core functionalities, improving code stability and reducing defect rates by 15%.
+• Actively engaged in code review sessions, providing constructive feedback and adhering to best practices for high-quality code.
+
+- **MSc Thesis Project (AI GAN Development) - Dublin City University** *(September 2024 - September 2025)*
 
 ## 🎓 Education
-- **MSc Computing (Artificial Intelligence)** - Dublin City University, Ireland *(September 2024 - Present)*
+- **MSc Computing (Artificial Intelligence)** - Dublin City University, Ireland *(September 2024 - September 2025)*
 - **Master in Computer Applications (MCA)** - Sinhgad Institute of Management, India *(2020 - 2022)*
   - First Class with Distinction (84.74%)
 - **Bachelor in Computer Applications (BBA - CA)** - Marathwada Mitra Mandal's College of Commerce, India *(2017 - 2020)*
