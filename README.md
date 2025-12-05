@@ -1,5 +1,9 @@
 # 💫 About Me:
-🔭 Software Engineer with 1.7 years of experience in backend development | Currently pursuing MSc in Computing (AI) at Dublin City University | Actively looking for fulltime or internship opportunities
+🔭 I’m a Software Engineer with hands-on experience building backend services, cloud systems, and data-driven applications. I work mostly with Java, Python, Spring Boot, and AWS, and I enjoy solving practical engineering problems that improve performance, reliability, and scalability.
+
+I’ve built and deployed microservices, integrated third-party APIs, optimized databases, and improved system throughput through clean engineering and testing practices. I’ve also explored machine learning through my MSc research on GAN-based synthetic data generation.
+
+I like working in teams where code quality, clear communication, and ownership matter. I’m open to backend, cloud, and platform engineering roles where I can contribute and continue learning.
 
 ## 🌐 Socials:
 [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/neeraj___28_09?igshid=YmMyMTA2M2Y=) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/neeraj-prasad-944422202/) 
