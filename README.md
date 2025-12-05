@@ -37,6 +37,9 @@ I like working in teams where code quality, clear communication, and ownership m
 - Actively engaged in code review sessions, providing constructive feedback and adhering to best practices for high-quality code.
 
 - **MSc Thesis Project (AI GAN Development) - Dublin City University** *(September 2024 - September 2025)*
+- Pioneered DCGAN and CGAN models using Python, TensorFlow, and Keras to produce 256×256 synthetic images with near-original dataset quality.
+- Architected novel approaches for dataset augmentation, resulting in a 15\% increase in model training efficiency.
+- Executed comprehensive evaluation metrics, demonstrating GAN model performance comparable to industry benchmarks.
 
 ## 🎓 Education
 - **MSc Computing (Artificial Intelligence)** - Dublin City University, Ireland *(September 2024 - September 2025)*
