@@ -81,7 +81,7 @@ I like working in teams where code quality, clear communication, and ownership m
 
 Most Java memory tools — and most textbooks — quietly teach wrong mental models. I identified 8 specific misconceptions and built a visualizer that corrects each one through how it actually renders, not through a warning label in the corner.
 
----
+
 
 ### ✦ What Makes It Different
 
@@ -90,7 +90,6 @@ Most Java memory tools — and most textbooks — quietly teach wrong mental mod
 - **Two-phase GC** — objects become GC-eligible first, collected after a random delay — because GC is non-deterministic
 - **ArrayList** renders as contiguous indexed cells, **Stack** as a LIFO tower — the visual matches the actual memory behavior
 
----
 
 ### ⚡ Features
 
@@ -100,7 +99,6 @@ Most Java memory tools — and most textbooks — quietly teach wrong mental mod
 - **Canvas-rendered BST** with dynamic layout and in-order traversal display
 - Zero dependencies — entire application ships as a single HTML file
 
----
 
 **Skills:** `Data Structures` `Java Memory Model` `Canvas API` `JavaScript` `HTML` `CSS`
 
@@ -121,7 +119,7 @@ Designed and deployed a live cloud-native photography platform using AWS. The sy
 - Telemetry tracking and performance monitoring
 - Production-grade caching strategies and optimization
 
-**Skills:** AWS (S3, Lambda, CloudFront) · CDN Architecture · Event-Driven Architecture · HTML5 · JavaScript · Responsive Design · Performance Optimization · UI/UX Design
+**Skills:** `AWS (S3, Lambda, CloudFront)`  `CDN Architecture`  `Event-Driven Architecture`  `HTML5`  `JavaScript`  `Responsive Design`  `Performance Optimization`  `UI/UX Design`
 
 **Links:** [Live Demo](https://d23oj82a8a9j68.cloudfront.net/) · [Repository](https://github.com/Neeraj281998/Pexeluxe/blob/9392f45e34b3ef74897d86ad688e4f125d81fc64/README.md)
 
@@ -146,7 +144,7 @@ Designed and built a production-grade automation service that continuously scans
 - Engineered persistent state management for reliability across crashes and restarts
 - Built production-style error handling and logging
 
-**Skills:** Python · FastAPI · Gmail API · Google Drive API · MySQL · OAuth2 · APScheduler · REST API · SQL · Git
+**Skills:** `Python` `FastAPI`  `Gmail API`  `Google Drive API`  `MySQL`  `OAuth2`  `APScheduler`  `REST API`  `SQL`  `Git`
 
 **Links:** [Repository](https://github.com/Neeraj281998/mail-to-drive-pipeline/blob/110be8e59f1d86f1a194fd87e484c2c3ba7e6c25/README.md)
 
@@ -157,7 +155,7 @@ Designed and built a production-grade automation service that continuously scans
 
 Interactive tool that brings sorting algorithms to life with step-by-step visualization of 6 different sorting techniques, helping learners understand algorithm behavior and performance characteristics.
 
-**Technologies:** Python · JavaScript · DOM · HTML · CSS
+**Technologies:** `Python` `JavaScript`  `DOM`  `HTML`  `CSS`
 
 **Created:** July 2022
 
