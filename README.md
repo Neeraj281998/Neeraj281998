@@ -75,20 +75,34 @@ I like working in teams where code quality, clear communication, and ownership m
 
 ## 🔍 Featured Projects
 
-### JavaMem — Java Memory Visualizer
-**Interactive Real-Time Memory Visualization Tool**
+## 🧠 JavaMem — Java Memory Visualizer
 
-Built an interactive browser-based tool that visualizes how Java manages memory in real time. Parses Java-like code and renders Stack, Heap, and String Pool live as you type, making complex memory concepts tangible and interactive.
+**DSA & Memory Education Tool**
 
-**Key Features:**
-- Live code parsing and memory state visualization
-- Supports LinkedList (node-chain view), BST (canvas tree), ArrayList, HashMap, Stack, HashSet, and primitive arrays
-- Simulates core Java memory concepts — string interning, Integer cache (−128 to 127), and garbage collection
-- Animated SVG arrows show reference relationships between stack variables and heap objects
-- Embedded Add & Remove controls for hands-on interaction with data structures
+Most Java memory tools — and most textbooks — quietly teach wrong mental models. I identified 8 specific misconceptions and built a visualizer that corrects each one through how it actually renders, not through a warning label in the corner.
+
+---
+
+### ✦ What Makes It Different
+
+- **HashMap** displays entries by hash bucket index — because HashMap does not preserve insertion order
+- **LinkedList** spawns individual node cards scattered across the heap — because each node is a separate allocation, not one contiguous block
+- **Two-phase GC** — objects become GC-eligible first, collected after a random delay — because GC is non-deterministic
+- **ArrayList** renders as contiguous indexed cells, **Stack** as a LIFO tower — the visual matches the actual memory behavior
+
+---
+
+### ⚡ Features
+
+- Visualizes **Stack, Heap & String Pool** in real time with animated SVG reference arrows
+- Supports **8+ data structures** with live Add / Remove controls — no re-run required
+- Simulates **String interning**, **Integer cache** (−128 to 127), and the `==` trap above 127
+- **Canvas-rendered BST** with dynamic layout and in-order traversal display
 - Zero dependencies — entire application ships as a single HTML file
 
-**Skills:** Data Structures · Java Memory Model · Canvas · JavaScript · HTML · CSS
+---
+
+**Skills:** `Data Structures` `Java Memory Model` `Canvas API` `JavaScript` `HTML` `CSS`
 
 **Links:** [Live Demo](https://neeraj281998.github.io/JavaMem-Java-Memory-Visualizer/) · [Repository](https://github.com/Neeraj281998/JavaMem-Java-Memory-Visualizer)
 
