@@ -106,22 +106,46 @@ Most Java memory tools — and most textbooks — quietly teach wrong mental mod
 
 ---
 
-### Pexeluxe — Cloud-Native Photography Platform
-**Scalable AWS-Powered Image Gallery**
+## 🧠 SQLMem — MySQL Query Visualizer  
 
-Designed and deployed a live cloud-native photography platform using AWS. The system automatically indexes newly uploaded images from Amazon S3 via event-driven Lambda functions and serves content globally using CloudFront CDN, implementing modern performance optimization and UX patterns.
+**SQL & Database Education Tool**
 
-**Key Features:**
-- Event-driven architecture with AWS Lambda for automatic image indexing
-- CloudFront CDN for global content distribution
-- Infinite scrolling, lazy loading, and responsive grid layouts
-- Interactive image viewer with keyboard navigation
-- Telemetry tracking and performance monitoring
-- Production-grade caching strategies and optimization
+Most people learn SQL by memorizing syntax. The deeper issue is the lack of a clear mental model of what actually happens inside the database engine when a query runs. I built a visualizer that animates every operation in execution order — rows being scanned, filtered, joined, grouped, sorted, and mutated — step by step, exactly as MySQL processes them.
 
-**Skills:** `AWS (S3, Lambda, CloudFront)`  `CDN Architecture`  `Event-Driven Architecture`  `HTML5`  `JavaScript`  `Responsive Design`  `Performance Optimization`  `UI/UX Design`
+---
 
-**Links:** [Live Demo](https://d23oj82a8a9j68.cloudfront.net/) · [Repository](https://github.com/Neeraj281998/Pexeluxe/blob/9392f45e34b3ef74897d86ad688e4f125d81fc64/README.md)
+### ✦ What Makes It Different
+
+- **Schema canvas** renders `CREATE TABLE` statements as draggable table cards with animated dashed foreign key arrows connecting child → parent columns in real time  
+- **JOIN animator** scans rows one-by-one with a glowing beam between tables — `INNER`, `LEFT`, `RIGHT`, and `FULL JOIN` produce visually distinct Venn diagrams and result streams  
+- **WHERE engine** supports `LIKE`, `IN`, `BETWEEN`, `IS NULL`, `IS NOT NULL` — matching rows flash green, filtered rows receive a strike-through animation before removal  
+- **DML animations**
+  - `INSERT` → new rows appear with a green flash  
+  - `UPDATE` → matched rows highlight yellow with values applied live  
+  - `DELETE` → rows strike through before removal  
+  - `TRUNCATE` → instant wipe with side-by-side comparison explaining how it differs from `DELETE`  
+- **GROUP BY + Aggregates** (`SUM`, `AVG`, `COUNT`, `MIN`, `MAX`) animate as proportional bar charts per group, with NULL exclusion indicators  
+- **Execution Order Explainer** — side-by-side view of how SQL is written vs how MySQL actually executes it, with live step highlighting  
+- **ORDER BY, LIMIT, OFFSET** animate result slicing with a stats card showing total / filtered / returned row counts  
+- Zero dependencies — entire application ships as a single HTML file and runs in any modern browser  
+
+---
+
+### ⚡ Features
+
+- Real-time animated query execution engine  
+- Interactive schema builder with foreign key relationship visualization  
+- Supports `SELECT`, `JOIN`, `WHERE`, `GROUP BY`, `ORDER BY`, `LIMIT`, `INSERT`, `UPDATE`, `DELETE`, `TRUNCATE`  
+- SVG-powered animations for row flow and relational links  
+- No backend required — fully client-side simulation  
+
+---
+
+**Skills:** `SQL` `MySQL` `Query Execution Engine` `Database Internals` `JavaScript` `HTML` `CSS` `SVG Animation`
+
+**Links:**  
+[Live Demo](https://neeraj281998.github.io/)  
+[Repository](https://github.com/Neeraj281998/SQLMem-MySQL-Query-Visualizer)
 
 ---
 
@@ -149,6 +173,27 @@ Designed and built a production-grade automation service that continuously scans
 **Links:** [Repository](https://github.com/Neeraj281998/mail-to-drive-pipeline/blob/110be8e59f1d86f1a194fd87e484c2c3ba7e6c25/README.md)
 
 ---
+
+### Pexeluxe — Cloud-Native Photography Platform
+**Scalable AWS-Powered Image Gallery**
+
+Designed and deployed a live cloud-native photography platform using AWS. The system automatically indexes newly uploaded images from Amazon S3 via event-driven Lambda functions and serves content globally using CloudFront CDN, implementing modern performance optimization and UX patterns.
+
+**Key Features:**
+- Event-driven architecture with AWS Lambda for automatic image indexing
+- CloudFront CDN for global content distribution
+- Infinite scrolling, lazy loading, and responsive grid layouts
+- Interactive image viewer with keyboard navigation
+- Telemetry tracking and performance monitoring
+- Production-grade caching strategies and optimization
+
+**Skills:** `AWS (S3, Lambda, CloudFront)`  `CDN Architecture`  `Event-Driven Architecture`  `HTML5`  `JavaScript`  `Responsive Design`  `Performance Optimization`  `UI/UX Design`
+
+**Links:** [Live Demo](https://d23oj82a8a9j68.cloudfront.net/) · [Repository](https://github.com/Neeraj281998/Pexeluxe/blob/9392f45e34b3ef74897d86ad688e4f125d81fc64/README.md)
+
+---
+
+
 
 ### Sorting Algorithm Visualizer
 **Interactive Algorithm Demonstration**
