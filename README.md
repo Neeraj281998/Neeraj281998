@@ -74,6 +74,63 @@ I like working in teams where code quality, clear communication, and ownership m
 
 ## 🔍 Featured Projects
 
+## ⚡ QuerySense — PostgreSQL Query Optimizer
+**AI-Powered Developer Tool · Rule Engine + Claude AI**
+
+EXPLAIN ANALYZE has existed for 30 years. It prints terrifying output that most developers ignore. I built QuerySense to fix that — paste a slow query, get back plain English: what's slow, why, and exactly how to fix it. With before/after proof.
+
+### ✦ The Architecture Decision That Matters
+The rule engine runs **before** Claude, not after. Deterministic rules catch known patterns instantly (free, always correct). Claude only runs for explanation and nuance. Every senior engineer asks *"what if the LLM is wrong?"* — this answers that question.
+```python
+def analyze(plan):
+    issues = rule_engine.detect(plan)      # Step 1 — deterministic, free, fast
+    ai_analysis = claude.explain(plan, known_issues=issues)  # Step 2 — human explanation
+    return merge(issues, ai_analysis)      # Rules give facts, AI gives language
+```
+
+### ✦ What It Detects (7 Rules)
+- **SequentialScanRule** — flags full table scans on tables with > 1,000 rows
+- **MissingIndexRule** — detects WHERE filters with no index to serve them
+- **MissingJoinIndexRule** — catches unindexed JOIN columns causing full scans on both sides
+- **NestedLoopLargeTableRule** — warns when nested loops produce > 10,000 rows (O(n×m))
+- **HighCostNodeRule** — identifies single nodes consuming > 50% of total query cost
+- **StaleStatisticsRule** — detects when row estimates are off by > 10x from reality
+- **PartialIndexOpportunityRule** — suggests partial indexes for constant-value WHERE filters
+
+### ⚡ Features
+- **Before/after benchmarking** — applies fix in a rollback transaction, measures real execution time — confirmed **98.8% latency reduction** on missing-index queries
+- **Evaluation layer** — verifies the plan actually changed (Seq Scan → Bitmap Heap Scan) not just timing
+- **Redis caching** — same query never hits the Claude API twice (24h TTL)
+- **History persistence** — every analysis saved to PostgreSQL for audit and replay
+- **CLI tool** — Typer + Rich with formatted benchmark tables and colored severity output
+- **Web UI** — single-file professional dark demo, zero framework
+- **Seed database** — 261K rows across 5 tables, no indexes intentionally — so QuerySense finds real slow queries out of the box
+
+### 📊 Benchmark Results
+| Query | Before | After | Improvement |
+|-------|--------|-------|-------------|
+| `SELECT * FROM orders WHERE user_id = 5` | 46.8 ms | 0.032 ms | ↓ 98.8% |
+| `SELECT * FROM orders WHERE created_at > '2024-01-01'` | 5.6 ms | 5.0 ms | n/a (low selectivity — honest) |
+| JOIN query (3 tables, 200K rows) | 141 ms | 121 ms | ↓ 13.9% |
+
+### 🏗 Stack
+| Layer | Tech |
+|-------|------|
+| API | FastAPI + asyncpg |
+| AI | Claude Haiku (Anthropic) |
+| Cache | Redis 7 (Upstash) |
+| Database | PostgreSQL 15 (Neon.tech) |
+| CLI | Typer + Rich |
+| Infrastructure | Docker + Railway + GitHub Actions |
+| Frontend | Single HTML file + GitHub Pages |
+| Total cost | $0 |
+
+**Skills:** `Python` `FastAPI` `PostgreSQL` `Claude AI` `Redis` `Docker` `asyncpg` `Rule Engine` `GitHub Actions`
+
+**Links:** [Live Demo](https://neeraj281998.github.io/Querysense/) · [API Docs](https://querysense-production.up.railway.app/docs) · [Repository](https://github.com/Neeraj281998/Querysense)
+
+---
+
 ## 🧠 JavaMem — Java Memory Visualizer
 
 **DSA & Memory Education Tool**
