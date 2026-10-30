@@ -31,19 +31,33 @@ Currently seeking **Backend / AI Engineer roles** — Dublin, United Kingdom, or
 ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi)
 ![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white)
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
 ![Redis](https://img.shields.io/badge/redis-%23DD0031.svg?style=for-the-badge&logo=redis&logoColor=white)
 ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 
 ### AI & LLMs
 ![Claude API](https://img.shields.io/badge/Claude_API-CC785C?style=for-the-badge)
+![LLM Agents](https://img.shields.io/badge/LLM_Agents-6E56CF?style=for-the-badge)
+![Tool Use](https://img.shields.io/badge/Tool_Use-6E56CF?style=for-the-badge)
+![LLM Evaluation](https://img.shields.io/badge/LLM_Evaluation-6E56CF?style=for-the-badge)
+![Guardrails](https://img.shields.io/badge/Guardrails_%26_Verification-6E56CF?style=for-the-badge)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)
 ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white)
+
+### Testing
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
+![Hypothesis](https://img.shields.io/badge/Hypothesis-Property--Based_Testing-4B5563?style=for-the-badge)
+![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Testcontainers](https://img.shields.io/badge/Testcontainers-4B5563?style=for-the-badge)
 
 ### Databases
 ![PostgreSQL](https://img.shields.io/badge/postgresql-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/mysql-%2300f.svg?style=for-the-badge&logo=mysql&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 
+### Domain
+![ISO 20022](https://img.shields.io/badge/ISO_20022-Payment_Messaging-0B3D91?style=for-the-badge)
+![XML/XSD](https://img.shields.io/badge/XML_%2F_XSD-Validation-4B5563?style=for-the-badge)
 ---
 
 ## 🏆 GitHub Trophies
@@ -97,6 +111,25 @@ Thesis: Generative model architectures (DCGAN/CGAN) for synthetic data generatio
 ---
 
 ## 🔍 Featured Projects
+
+### 🚀 PayStruct
+
+**Rules-first AI repair pipeline for ISO 20022 payment addresses.** Banks are moving postal addresses in payment messages from free text to structured fields, and an LLM will happily "repair" a messy address and get it quietly wrong. PayStruct lets the AI propose and plain code decide: a Python rules engine goes first, a Claude agent handles only what the rules can't, and a deterministic verifier (validation, grounding, completeness) is the only route to publishing. Anything uncertain goes to a person.
+
+| 1,000 held-out synthetic addresses | Auto-correct | False repairs (of accepted) | Cost / 1,000 |
+|---|---|---|---|
+| LLM only | 96.2% | 3.4% (34/996) | $0.263 |
+| **PayStruct** | 89.0% | **0.2% (2/892)** | **$0.0066** |
+
+- First live run caught the model silently deleting correct text → added a completeness check and field locking, tests first
+- Property-based tests (Hypothesis) assert no invented values; 15-case prompt-injection check; Java/Spring Boot ingestion service with XSD validation and XXE protection
+- The README is explicit about the limits: on this data the agent mostly adds a safety gate, not extra accuracy, and India addresses are the weak spot (40% auto-correct)
+
+`Python` `Claude API` `Java / Spring Boot` `PostgreSQL` `Docker` `Hypothesis` `GitHub Actions`
+
+👉 [github.com/Neeraj281998/Paystruct](https://github.com/Neeraj281998/Paystruct)
+
+*Synthetic data only. Implements a documented subset of CBPR+ address rules; not certified or production-ready.*
 
 ## ⚡ QuerySense — PostgreSQL AI Query Optimizer
 **Production LLM Agent · Rule Engine + Claude API**
