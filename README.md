@@ -251,16 +251,7 @@ People receive dozens of file attachments daily and have to manually download an
 
 ---
 
-## ☁️ Pexeluxe — Cloud-Native Photography Platform
-**Scalable AWS-Powered Image Gallery**
 
-Designed and deployed a live cloud-native photography platform on AWS. Newly uploaded images are automatically indexed via event-driven Lambda functions and served globally through CloudFront CDN.
-
-**Skills:** `AWS (S3, Lambda, CloudFront)` `CDN Architecture` `Event-Driven Architecture` `HTML5` `JavaScript` `Performance Optimisation`
-
-**Links:** [Live Demo](https://d23oj82a8a9j68.cloudfront.net/) · [Repository](https://github.com/Neeraj281998/Pexeluxe/blob/9392f45e34b3ef74897d86ad688e4f125d81fc64/README.md)
-
----
 
 ## 📜 Certifications
 
